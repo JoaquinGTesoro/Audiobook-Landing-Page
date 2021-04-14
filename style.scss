@@ -82,9 +82,10 @@ header {
         font-size: 1.6em;
     }
 
-    a {
+    .nav-link {
         color: white;
         font-weight: 500;
+        position: relative;
     }
 }
 
@@ -186,6 +187,7 @@ header {
         display: inline-block;
         margin-top: 1em;
         font-weight: 500;
+        transition: transform 250ms;
     }
 }
 
@@ -213,6 +215,10 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 1em;
+
+    a {
+        transition: transform 250ms;
+    }
 
     img {
         width: 100%;
@@ -295,6 +301,51 @@ footer {
         color: white;
     }
 }
+
 /*========
   Estados
 ========*/
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 10%;
+    right: 10%;
+    top: 1.5em;
+    transition: width 250ms;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+    width: 80%;
+    border: 1px solid white;
+}
+
+.btn-probar,
+.btn-ingresar,
+.app-store-btn,
+.play-store-btn {
+    transition: transform 250ms;
+}
+
+.btn-probar:hover,
+.btn-probar:focus,
+.btn-ingresar:hover,
+.btn-ingresar:focus,
+.app-store-btn:hover,
+.app-store-btn:focus,
+.play-store-btn:hover,
+.play-store-btn:focus {
+    transform: scale(1.1);
+}
+
+.s-caracteristicas a:hover,
+.s-caracteristicas a:focus {
+    transform: translateX(2em);    
+}
+
+.s-populares a:hover,
+.s-populares a:focus {
+    transform: scale(1.05);
+}

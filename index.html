@@ -13,10 +13,10 @@
         <a href="#principal" class="logo">Tellme</a>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#caracteristicas">Características</a></li>
-                <li><a href="#populares">Populares</a></li>
-                <li><a href="#descargar">Descargar</a></li>
-                <li><a href="#">Explorar</a></li>
+                <li><a tabindex="1" class="nav-link" href="#caracteristicas">Características</a></li>
+                <li><a tabindex="2" class="nav-link" href="#populares">Populares</a></li>
+                <li><a tabindex="3" class="nav-link" href="#descargar">Descargar</a></li>
+                <li><a tabindex="4" class="nav-link" href="#">Explorar</a></li>
             </ul>
         </nav>
     </header>
@@ -68,15 +68,17 @@
         </section>
         <section class="s-descargar" id="descargar">
             <div class="link-container">
-                <h2>Descarga <br><span>Tellme</span></h2>
-                <a href="https://play.google.com/store/apps" target="_blank">
-                    <img src="/Imagenes/Iconos/google-play-brands.svg" alt="">
-                    Play Store
-                </a>
-                <a href="https://www.apple.com/app-store/" target="_blank">
-                    <img src="/Imagenes/Iconos/apple-brands.svg" alt="">
-                    App Store
-                </a>
+                <h2>Descarga <br><span class="logo">Tellme</span></h2>
+                <div class="btn-container">
+                    <a class="play-store-btn" href="https://play.google.com/store/apps" target="_blank">
+                        <img src="/Imagenes/Iconos/google-play-brands.svg" alt="">
+                        Play Store
+                    </a>
+                    <a class="app-store-btn" href="https://www.apple.com/app-store/" target="_blank">
+                        <img src="/Imagenes/Iconos/apple-brands.svg" alt="">
+                        App Store
+                    </a>
+                </div>
             </div>
             <div class="download-vector">
                 <img src="/Imagenes/Vectores/undraw_download_pc33.svg" alt="">
