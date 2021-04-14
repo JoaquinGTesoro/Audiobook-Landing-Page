@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:wght@400;500;700&display=swap');
+
+/*=========
+  GLobales
+==========*/
+
+:root {
+    --negro: #3b3b3b;
+    --naranja: #F9A826;
+    --azul: #4D8AF0;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*==========
+  Elementos
+===========*/
+
+body {
+    font-family: Raleway, Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--negro);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+h2 {
+   font-size: 3em; 
+   font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 80%;
+    height: 10vh;
+    background-color: var(--naranja);
+    color: white;
+    padding: 0 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 2.5em;
+    color: white;
+}
+
+.nav-bar {
+    ul {
+        display: flex;
+    }
+
+    li {
+        list-style: none;
+        margin-right: 1.5em;
+        font-size: 1.6em;
+    }
+
+    a {
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.s-principal {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.info {
+    width: 80%;
+    height: 100%;
+    background-color: var(--naranja);
+    color: white;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .pre-titulo {
+        font-size: 2em;
+    }
+
+    h1 {
+        font-size: 6em;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+}
+
+.btn-probar,
+.btn-ingresar {
+    display: inline-block;
+    width: 12em;
+    font-size: 1.6em;
+    padding: 1em .5em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-probar {
+    background-color: var(--azul);
+    border: solid 5px var(--azul);
+    margin-right: 2em;
+}
+
+.btn-ingresar {
+    background-color: transparent;
+    border: solid 5px white;
+}
+
+.walking-vector {
+    max-width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 63%;
+    transform: translateY(-40%);
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+.s-caracteristicas {
+    margin: 10em 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+        padding: 0 5%;
+    }
+}
+
+.carta {
+    list-style: none;
+
+    img {
+        height: 5em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+        font-weight: bold;
+        margin: 1em 0;
+    }
+
+    p,
+    a {
+        font-size: 1.6em;
+        line-height: 150%;
+    }
+
+    a {
+        color: var(--naranja);
+        display: inline-block;
+        margin-top: 1em;
+        font-weight: 500;
+    }
+}
+
+
+.s-populares {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--naranja);
+    display: grid;
+
+    h2 {
+        color: white;
+        padding: 0 5%;
+        margin: 5rem 0 0 0;
+    }
+
+    a {
+        place-self: center;
+        margin-bottom: 2.5em;
+    }
+}
+
+.img-container {
+    width: 100%;
+    place-self: center center;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+    img {
+        width: 100%;
+    }
+}
+
+/*========
+  Estados
+========*/
